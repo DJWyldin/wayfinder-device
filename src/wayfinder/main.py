@@ -1,12 +1,11 @@
-from camera import init_camera, get_frame
-from detector import detect
-from logic import decide
-from audio import speak
+from wayfinder.camera import init_camera, get_frame
+from wayfinder.detector import detect
+from wayfinder.logic import decide
+from wayfinder.audio import speak
 import cv2
 
 def main():
     cap = init_camera()
-
     print("Wayfinder running...")
 
     while True:
